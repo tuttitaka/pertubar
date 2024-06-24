@@ -9,7 +9,7 @@
 
     <style>
         body{
-            background-color: red;
+            background-color: rgb(124, 11, 11);
         }
 
         .painel{
@@ -23,8 +23,8 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         #sim{
-            height: 40px;
-            width: 60px;
+            height: 60px;
+            width: 80px;
             background-color: red;
             border: 2px solid white;
             border-radius: 10px;
@@ -33,30 +33,55 @@
         }
         #nao{
             position: absolute;
-            height: 40px;
-            width: 60px;
-            background-color: red;
+            height: 60px;
+            width: 80px;
+            background-color: rgb(255, 0, 0);
             border: 2px solid white;
             border-radius: 10px;
             color: white;
             margin-left: 10px;
         }
 
+        @media (max-width: 768px) {
+            .painel {
+                width: 80%;
+                height: auto;
+                padding: 20px;
+            }
+
+            #sim, #nao {
+                width: 50px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .painel {
+                width: 90%;
+                height: auto;
+                padding: 15px;
+            }
+
+            #sim, #nao {
+                width: 40px;
+                height: 30px;
+            }
+        }
     </style>
 
 </head>
 <body>
 
     <div class="painel">
-        <h1> Jennifer Dayara</h1>
+        <h1> Thais</h1>
 
         <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
 
-        <h2>Aceita namorar comigo? </h2>
+        <h2>ja tomou banho esse mês?? </h2>
         
 
-        <a href="https://youtu.be/fOA_SCbuGXo?si=0hWncGc6MmVJvPDS"><button id="sim" > Sim! </button></a>
-        <button onmouseover="fuja()" id="nao"> Não! </button>
+        <a href="https://vm.tiktok.com/ZMr6DGe6A/"><button id="sim" > NÃO! </button></a>
+        <button onmouseover="fuja()" id="nao"> SIM! </button>
         
     </div>
 
