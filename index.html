@@ -1,118 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahno</title>
-
-    <style>
-        body {
-            background-color: rgb(124, 11, 11);
-        }
-
-        .painel {
-            margin: auto;
-            background-color: white;
-            width: 500px;
-            height: 500px;
-            border-radius: 20px;
-            text-align: center;
-            padding-top: 50px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        #sim {
-            height: 60px;
-            width: 80px;
-            background-color: red;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: -50px;
-        }
-
-        #nao {
-            position: absolute;
-            height: 60px;
-            width: 80px;
-            background-color: rgb(255, 0, 0);
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .painel {
-                width: 80%;
-                height: auto;
-                padding: 20px;
-            }
-
-            #sim,
-            #nao {
-                width: 50px;
-                height: 35px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .painel {
-                width: 90%;
-                height: auto;
-                padding: 15px;
-            }
-
-            #sim,
-            #nao {
-                width: 40px;
-                height: 30px;
-            }
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <div class="painel">
-        <h1> Thais</h1>
-
-        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
-
-        <h2>ja tomou banho esse mês?? </h2>
-
-
-        <a href="https://vm.tiktok.com/ZMr6DGe6A/"><button id="sim"> NÃO! </button></a>
-        <button onmouseover="fuja()" id="nao"> SIM! </button>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Love letter for crush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- tiktok meowish -->
+    <div class="envlope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <div class="words line1">Mariana🤍</div>
+          <div class="words line2">Se um dia a lua chamar pelo tu nome </div>
+          <div class="words line21">teu nome não surpreenda-se </div>
+          <div class="words line3">pois todas as noites</div>
+          <div class="words line4">eu falo de você.</div>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset">
+      <button id="open">Open</button>
+      <button id="reset">Close</button>
     </div>
 
-    <script>
-        function fuja() {
-            var botaoNao = document.getElementById("nao")
-
-            var larguraJanela = window.innerWidth;
-            var alturaJanela = window.innerHeight;
-
-            var maxX = larguraJanela - botaoNao.offsetWidth;
-            var maxY = alturaJanela - botaoNao.offsetHeight;
-
-            var aleatorioX = Math.floor(Math.random() * maxX);
-            var aleatorioY = Math.floor(Math.random() * maxY);
-
-            botaoNao.style.left = aleatorioX + "px";
-            botaoNao.style.top = aleatorioY + "px";
-
-
-        }
-    </script>
-
-
-
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
